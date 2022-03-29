@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       // ignore: use_full_hex_values_for_flutter_colors
-      backgroundColor: Color(0xfff0fedb),
+      backgroundColor: const Color(0xfff0fedb),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -28,14 +28,14 @@ class HomeScreen extends StatelessWidget {
           const Text("     14🔥", style: kSubfiretStyle),
           //Continue
           progresCard(),
-          UpgradeCard(),
-          SizedBox(height: 20),
+          const UpgradeCard(),
+          const SizedBox(height: 20),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 21),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
-                Text("Explore subjects", style: kTitleTextStyle),
+                const Text("Explore subjects", style: kTitleTextStyle),
                 Text(
                   "View All",
                   style: kSubtitleTextSyule.copyWith(
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
           ),
           const SizedBox(height: 20),
           Container(
-            margin: EdgeInsets.only(left: 20),
+            margin: const EdgeInsets.only(left: 20),
             height: 190,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,

@@ -52,7 +52,7 @@ List<Widget> names = [
 class CarouselContainer extends StatelessWidget {
   final String cardtext;
   final bool isTitle;
-  TextToSpeech tts = TextToSpeech();
+  final TextToSpeech tts = TextToSpeech();
 
   CarouselContainer({
     Key? key,
@@ -74,7 +74,7 @@ class CarouselContainer extends StatelessWidget {
             Expanded(
               child: Center(
                 child: Padding(
-                  padding: EdgeInsets.all(20.0),
+                  padding: const EdgeInsets.all(20.0),
                   child: Text(
                     cardtext,
                     style: TextStyle(

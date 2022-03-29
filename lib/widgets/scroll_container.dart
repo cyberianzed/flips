@@ -43,7 +43,7 @@ class ScrollBox extends StatelessWidget {
             TextButton(
               onPressed: () {
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => CardWidget()));
+                    MaterialPageRoute(builder: (context) => const CardWidget()));
               },
               child: Text(
                 subjectname,

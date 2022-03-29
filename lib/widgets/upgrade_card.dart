@@ -19,7 +19,7 @@ class UpgradeCard extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                SizedBox(width: 3),
+                const SizedBox(width: 3),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -42,10 +42,10 @@ class UpgradeCard extends StatelessWidget {
                     const SizedBox(height: 5),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text("Upgrade now"),
+                      child: const Text("Upgrade now"),
                       style: ButtonStyle(
                         backgroundColor:
-                            MaterialStateProperty.all<Color>(Color(0xff007644)),
+                            MaterialStateProperty.all<Color>(const Color(0xff007644)),
                       ),
                     )
                   ],
